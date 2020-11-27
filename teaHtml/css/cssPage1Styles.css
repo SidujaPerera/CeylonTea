@@ -1,0 +1,36 @@
+.main-heading {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  color: #6ebc29;
+}
+
+.banner-img {
+  width: 100vw;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  margin-bottom: 20px;
+}
+
+.sub-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.image-wrapper {
+  width: 100%;
+}
+
+.section-img {
+  width: calc(100% - 40px);
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.content-wrapper {
+  width: 100%;
+}

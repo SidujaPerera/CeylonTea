@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="top-header">
+      <span>+94769138652 | hello@ceylontea.com</span>
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="type-of-tea.html">Types of Tea</a></li>
+      <li class="dropdown">
+        <a href="tea-manufactures.html" class="dropbtn"
+          >Sri Lanka Tea Manufacturers</a
+        >
+        <div class="dropdown-content">
+          <a href="css-page-1.html">Css Design1</a>
+          <a href="css-page-2.html">Css Design2</a>
+        </div>
+      </li>
+      <li><a href="buy-now.html" class="active">Buy Now</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+    <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+      <img src="images/icons/icon-home-black.png" />
+      <a href="index.html" title="Home">Home</a>
+      <span aria-hidden="true">›</span>
+      <span>Buy Now</span>
+    </nav>
+    <div class="row">
+      <div class="main">
+        <h2>Buy Now</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="main buy-wrapper">
+        <div class="card-container" id="card-container"></div>
+
+        <div class="cart-wrapper">
+          <p>Your Order</p>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Size</th>
+                <th>Packaging</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="currentOrderContainer"></tbody>
+          </table>
+          <button class="cart-btn" onclick="onClickPlaceOrder()">
+            Place order
+          </button>
+          <button class="cart-btn" onclick="onClickAddToFavourite()">
+            Add to favourites
+          </button>
+          <hr />
+          <button class="cart-btn" onclick="onClickCheckLoyalty()">
+            Check loyalty
+          </button>
+          <button class="cart-btn" onclick="onClickOrderFavourite()">
+            Order favourite
+          </button>
+
+          <div id="loyaltyPointsContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h4>© Copyright Ceylon Tea 2020 All Right Reserved.</h4>
+    </div>
+
+    <!-- The order confirmation Modal -->
+    <div id="orderConfirmationModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h4>Placed your order successfully!</h4>
+        <p>Thanks for buying Sri Lankan tea. enjoy.</p>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/buy-now.js"></script>
+</html>
